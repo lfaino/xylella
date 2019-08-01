@@ -1,0 +1,55 @@
+strain	Subspecies
+32	pauca
+3124	pauca
+11399	pauca
+6c	pauca
+9a5c	pauca
+Ann	sandyi
+ATCC 35871	multiplex
+ATCC 35879	fastidiosa
+BB01	multiplex
+CFBP8072	pauca
+CFBP8073	fastidiosa
+CFBP8416	multiplex
+CFBP8417	multiplex
+CFBP8418	multiplex
+CO33	fastidiosa
+CoDiRO	pauca
+COF0324	pauca
+COF0407	pauca
+CVC0251	pauca
+CVC0256	pauca
+De Donno	pauca
+Dixon	multiplex
+DSM 10026	fastidiosa
+EB92.1	fastidiosa
+Fb7	pauca
+GB514	fastidiosa
+Griffin	multiplex
+Hib4	pauca
+IVIA5235	fastidiosa
+J1a12	pauca
+M12	multiplex
+M23	fastidiosa
+MUL0034	morus
+Mul	morus
+OLS0478	pauca
+OLS0479	pauca
+Pr8x	pauca
+Salento	pauca
+Stag's Leap	fastidiosa
+sycamore Sy	multiplex
+Temecula1	fastidiosa
+U24D	pauca
+IVIA5901	multiplex
+ESVL	multiplex
+CFBP8078	multiplex
+CFBP7970	fastidiosa
+CFBP8071	fastidiosa
+CFBP8078	multiplex
+CFBP7969	fastidiosa
+CFBP8082	fastidiosa
+XYL1732	fastidiosa
+XYL2055	fastidiosa
+CFBP8351	fastidiosa
+CFBP8356	sandyi
