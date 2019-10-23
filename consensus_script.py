@@ -1,16 +1,16 @@
 #! /usr/bin/env python3
 
-import subprocess as sb
-import os
-from Bio import SeqIO
 import argparse
+import os
+import subprocess as sb
 import tempfile
-import xml.etree.ElementTree as ET
-import requests
-from io import StringIO
-from Bio import pairwise2
 import uuid
+import xml.etree.ElementTree as ET
+from io import StringIO
 
+import requests
+from Bio import SeqIO
+from Bio import pairwise2
 
 mlst_database = "https://pubmlst.org/data/dbases.xml"
 
@@ -22,7 +22,7 @@ SAMINDEX = "samtools index %s"
 RACON = "racon -t %s -f %s %s %s"
 JELLYFISH_COUNT= "jellyfish count -m 100 -s 100M -t 10 -o /dev/stdout -C %s"
 JELLYFISH_DUMP= "jellyfish dump -o %s /dev/stdin"
-SPADES = "spades -s %s -o %s --only-assembler"
+SPADES = "spades.py -s %s -o %s --only-assembler"
 PORECHOP = "porechop -i %s -t %s -o %s"
 NANOPOLISHV = "nanopolish variants --consensus -o %s -w %s -r %s -b %s -g %s -t %s --min-candidate-frequency 0.1 -p 1 " \
               "--fix-homopolymers"

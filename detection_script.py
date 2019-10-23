@@ -1,14 +1,16 @@
 #! /usr/bin/env python3
 
-import subprocess as sb
-import os
-from ete3 import NCBITaxa
-from Bio import SeqIO
-import gzip
-from pathlib import Path
 import argparse
-import pandas as pd
+import gzip
+import os
+import subprocess as sb
+from pathlib import Path
+
 import matplotlib as mpl
+import pandas as pd
+from Bio import SeqIO
+from ete3 import NCBITaxa
+
 if os.environ.get('DISPLAY','') == '':
     print('no display found. Using non-interactive Agg backend')
     mpl.use('Agg')
@@ -49,7 +51,9 @@ def setting():
     parser.add_argument("-f","--fastq", nargs="?", default="", required=True)
     parser.add_argument("-g", "--genomes", nargs="?", default="")
     parser.add_argument("-t", "--threads", nargs="?", default="1")
-    parser.add_argument("-d", "--NCBIdatabase", nargs="?", default="refseq")
+    parser.add_argument("-d", "--NCBIdatabase", nargs="?", default="refseq",
+                        help="The parameter indicate from with database to downlaod the genomes. "
+                             "It can have assembly or refseq. Default is refseq")
     parser.add_argument("-w", "--workdir", nargs="?", default="./")
     parser.add_argument("-u", "--update", action='store_true')
     args = parser.parse_args()
