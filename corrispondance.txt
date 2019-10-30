@@ -53,3 +53,8 @@ XYL1732	fastidiosa
 XYL2055	fastidiosa
 CFBP8351	fastidiosa
 CFBP8356	sandyi
+TOS14	multiplex
+TOS4	multiplex
+TOS5	multiplex
+WM1	unknown
+TemaculaL	fastidiosa

@@ -66,7 +66,7 @@ def analysis():
     ncbi = NCBITaxa()
     home = str(Path.home())
     pathogens = args.pathogens_species.split(",")
-    file_combined_fastq = args.fastq
+    file_combined_fastq = os.path.join(os.getcwd(), args.fastq)
     if not os.path.isfile(file_combined_fastq):
         fastq_files = [os.path.join(file_combined_fastq, f) for f in listdir(file_combined_fastq) if isfile(join(file_combined_fastq, f)) and f.endswith("fastq")]
         k = file_combined_fastq.rfind("/")
@@ -211,7 +211,7 @@ def analysis():
                         if entry.startswith("MD"):
                             md = entry.split(":")[-1]
                             mismatch = len(re.findall("[A-Z]", md))
-                            match = sum([int(number) for number in re.sub('[A-Z]|\^', ',', md).split(",") if number != ""])
+                            match = sum([int(number) for number in re.sub('[A-Z]|\^', ',', md).split(",") if number != "" and number.isdigit()])
                             if match > 0:
                                 if mismatch > 0:
                                     iden = (match - mismatch) / match * 100
